@@ -1,0 +1,13 @@
+.mycard {
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+.mycard:hover {
+  background-color: rgb(226, 241, 255);
+  cursor: pointer;
+}
+
+.mycard span {
+  font-weight: bold;
+}
