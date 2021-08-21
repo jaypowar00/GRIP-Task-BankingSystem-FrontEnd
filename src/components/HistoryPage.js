@@ -11,7 +11,7 @@ class HistoryPage extends PureComponent {
     }
 
     componentDidMount(){
-        axios.get('http://127.0.0.1:5000/history')
+        axios.get('https://grip-bankingsystem-backend.herokuapp.com/history')
         .then(response=>{
             console.log(response);
             if(response.data.status){

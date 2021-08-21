@@ -26,7 +26,7 @@ class TransactionForm extends PureComponent {
             to: receiver,
             amount: amount
         }
-        axios.post('http://localhost:5000/transfer', formData)
+        axios.post('https://grip-bankingsystem-backend.herokuapp.com/transfer', formData)
         .then(response=>{
             if(response.data.status){
                 alert(response.data.message);
@@ -63,7 +63,7 @@ class TransactionForm extends PureComponent {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/')
+        axios.get('https://grip-bankingsystem-backend.herokuapp.com/')
         .then(response=>{
             if(response.data.status){
                 this.setState({

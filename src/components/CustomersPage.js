@@ -11,7 +11,7 @@ class CustomersPage extends PureComponent {
     }
 
     componentDidMount(){
-        axios.get('http://127.0.0.1:5000/')
+        axios.get('https://grip-bankingsystem-backend.herokuapp.com/')
         .then(response=>{
             console.log(response);
             if(response.data.status){
